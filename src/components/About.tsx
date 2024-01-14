@@ -1,16 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { useQuery, useMutation } from "@apollo/client";
-import { LOAD_SERVICES } from "../graphql/queries";
-import { ACTION_ABOUTUS } from "../graphql/mutations";
-import { plus } from "../assets";
-import ServiceCardModal from "./modal/ServiceCardModal";
 import { services, userName } from "../constants";
 
 interface ServiceCardInterface {

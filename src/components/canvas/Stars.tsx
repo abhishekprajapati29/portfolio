@@ -7,8 +7,10 @@ import * as random from "maath/random/dist/maath-random.esm";
 const Stars = (props: any) => {
   const ref = useRef<HTMLInputElement>();
   const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+   // eslint-disable-next-line
   useFrame((state, delta) => {
     // eslint-disable-next-line
+    console.log(state)
     const node = ref.current as any;
     node.rotation.x -= delta / 10;
     node.rotation.y -= delta / 15;
