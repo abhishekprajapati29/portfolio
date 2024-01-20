@@ -47,8 +47,15 @@ const ServiceCard = ({
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant(0)}>
+      
+      <motion.div variants={textVariant(0)} >
         <h2 className={styles.sectionHeadText}>Overview.</h2>
+          <button
+            onClick={() => window.open(userName.resume, "_blank")}
+          className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+        >
+          {"View Resume"}
+        </button>
       </motion.div>
 
       <motion.p

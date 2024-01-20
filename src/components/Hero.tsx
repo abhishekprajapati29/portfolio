@@ -21,9 +21,9 @@ const Hero = () => {
           </h1>
 
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              {userName.tag?.substring(0, 37) || ""}
+              {userName.sub?.substring(0, 37) || ""}
               <br className="sm:block hidden" />
-              {userName.tag?.substring(37) || ""}
+              {userName.sub?.substring(37) || ""}
           </p>
           
         </div>

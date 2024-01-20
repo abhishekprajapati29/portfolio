@@ -16,12 +16,15 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
-  shopify,
+  iesoftek,
+  link,
+  kalpas,
   carrent,
   jobit,
   tripguide,
+  project1,
+  project2,
+  project3,
   threejs,
 } from "../assets";
 
@@ -29,9 +32,11 @@ export const userName = {
   id: "username",
   name: "Abhishek Prajapati",
   tag: "Software Engineer",
-  about: "testing"
+  sub: "Implements cutting-edge solutions for business growth",
+  about: "I am a results-driven Software Engineer with a track record of enhancing businesses by creating and implementing user-friendly features. With over 1.5 years of combined full-time experience in Full Stack development, I've consistently delivered tangible results for my employers. I'm passionate about transforming business logic into practical development solutions that drive sales growth and enhance product value.",
+  resume: "https://drive.google.com/file/d/132U2PUre50XNEa-9WG8k_0DQGqTqTo6h/view?usp=sharing"
 }
-
+ 
 export const navLinks = [
   {
     id: "about",
@@ -74,7 +79,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Salesforce Developer",
     icon: creator,
   },
 ];
@@ -105,7 +110,7 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: "AWS",
     icon: tailwind,
   },
   {
@@ -136,55 +141,135 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Engineer",
+    company_name: "IESOFT TECHNOLOGIES PVT LTD",
+    icon: iesoftek,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Oct 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Achieved a 30% revenue boost with my team by developing impactful features, as evidenced by the annual revenue report. Utilized MongoDB, Express, ReactJS, React Native, and NodeJS for efficient implementation.",
+      "Achieved 40% higher user retention and experience by reducing bugs and optimizing the system, as indicated by user engagement data.",
+      "Collaborated closely with UI team, product manager, and product owner to prioritize concurrency, user experience, code quality, and scalability.",
+      "Achieved 90%+ code coverage for production-ready code through comprehensive Jest unit testing.",
+      "Boosted efficiency and code quality with reusable React components and component-based architecture, reducing development time."
+    ],
+    tags: [
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ReactJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MERN",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MEAN",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React Native",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SQL",
+        color: "blue-text-gradient",
+      },
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Software Engineer Intern",
+    company_name: "IESOFT TECHNOLOGIES PVT LTD",
+    icon: iesoftek,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "April 2022 - Oct 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Achieved a significant reduction in bug count, enhancing the user experience and retention rate by 30%, as measured by user site engagement data, through proactive bug fixes and optimization efforts.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+      "Setup Project from scratch and build projects with different technologies like MERN, Apollo graphql, serverless, and more."
     ],
+    tags: [
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ReactJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL",
+        color: "blue-text-gradient",
+      },
+    ]
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "ReactJS Intern",
+    company_name: "Kalpas Innovations Pvt. Ltd",
+    icon: kalpas,
+    iconBg: "#383E56",
+    date: "Jul 2021 - Nov 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Achieved a 60% reduction in website loading time by implementing a 3-layer Insurance website DataFlow.",
+      "Optimized API integration, reduced latency by 80% (from 10 to 2 seconds), and resolved multiple API call issues for Germany’s Job Portal website.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and Developed Several Web Pages, UI for the websites"
+    ],
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "REST APIs",
+        color: "blue-text-gradient",
+      },
     ],
   },
 ];
@@ -218,67 +303,78 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "ASSIGN PROJECT",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      " Project Management powerhouse – a one-stop hub with a sleek Dashboard, dynamic Task Tracking, and seamless Bug Busting for unparalleled project control.",
     tags: [
       {
-        name: "react",
+        name: "MongoDB",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Express",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "ReactJS",
         color: "pink-text-gradient",
       },
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: project1,
+    live_link: "https://assign-project.onrender.com/",
+    source_code_link: "https://github.com/abhishekprajapati29/assign-project",
   },
   {
-    name: "Job IT",
+    name: "ASSIGN IT (Android)",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Project Management App– a one-stop hub with a sleek Dashboard, dynamic Task Tracking, and seamless Bug Busting for unparalleled project control.",
     tags: [
       {
-        name: "react",
+        name: "MongoDB",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Express",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Flutter",
         color: "pink-text-gradient",
       },
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: project2,
+    live_link: "https://drive.google.com/file/d/1tz7dBCoGcr_ftQTuJDA0kjADSCnuzHiB/view?usp=sharing",
+    source_code_link: "https://github.com/abhishekprajapati29/Flutter-project",
   },
   {
-    name: "Trip Guide",
+    name: "Portfolio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Software Developer Portfolio that helps to showcase my personality, work, skills and experience about me as a software developer.",
     tags: [
       {
-        name: "nextjs",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Framer-motion",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "threejs",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: project3,
+    live_link: "https://abhishekprajapati.onrender.com/",
+    source_code_link: "https://github.com/abhishekprajapati29/portfolio",
   },
 ];
 

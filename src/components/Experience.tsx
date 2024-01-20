@@ -10,6 +10,11 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { experiences } from "../constants";
 
+interface tag {
+  name: string;
+  color: string;
+}
+
 interface exp {
   date: string;
   icon: string;
@@ -17,6 +22,7 @@ interface exp {
   iconBg: string;
   title: string;
   points: string[];
+  tags: tag[];
 }
 
 interface Experience {
@@ -67,6 +73,17 @@ const ExperienceCard = ({ experience }: Experience) => {
           </li>
         ))}
       </ul>
+      <div className="mt-4 flex flex-wrap gap-2">
+        {experience.tags?.map((tag: tag, index) => (
+          <p
+            key={`${name}-${tag.name}-${index}`}
+            className={`text-[14px] ${tag.color}`}
+            style={{margin: 0 }}
+          >
+            #{tag.name}
+          </p>
+        ))}
+      </div>
     </VerticalTimelineElement>
   );
 };

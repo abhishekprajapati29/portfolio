@@ -66,7 +66,7 @@ const Navbar = () => {
           </ul>
           <ul className="list-none hidden sm:flex flex-row gap-1">
             <div
-                onClick={() => window.open("/", "_blank")}
+                onClick={() => window.open("https://github.com/abhishekprajapati29", "_blank")}
                 className="mt-2 w-10 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
@@ -76,7 +76,7 @@ const Navbar = () => {
                 />
             </div>
             <div
-                onClick={() => window.open("/", "_blank")}
+                onClick={() => window.open("https://www.linkedin.com/in/abhishekprajapati29/", "_blank")}
                 className="mt-2 w-10 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
