@@ -23,7 +23,7 @@ Welcome to my digital showcase! This portfolio represents my journey and experti
 
 <br />
 
-### Website Preview
+## 🔥 Website Preview
 <img src="./public/abhishekprajapati.gif" width="900">
 
 ## 📋 Features
@@ -59,6 +59,15 @@ Before you begin, ensure you have met the following requirements:
 
 - [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 - npm (comes with Node.js) or yarn (Recommended: [Yarn](https://yarnpkg.com/))
+
+## ⭐ Environment Variables
+To run the project locally, you need to set up the following environment variables. Create a `.env` file in the root of your project and add the following:
+
+```env
+VITE_APP_EMAILJS_SERVICE_ID=<EMAILJS_SERVICE_ID>
+VITE_APP_EMAILJS_TEMPLATE_ID=<EMAIL_TEMPLATE_ID>
+VITE_APP_EMAILJS_PUBLIC_KEY=<PUBLIC_KEY>
+```
 
 
 ## 📦 Installation
