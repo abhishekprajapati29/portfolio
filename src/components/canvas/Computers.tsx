@@ -9,7 +9,7 @@ interface IsMobile {
 }
 
 const Computers = ({ isMobile }: IsMobile) => {
-  const computer = isMobile ? useGLTF("./desktop_pc/scene.gltf") : useGLTF("./desktop_pc_mini/scene.gltf");
+  const computer = isMobile ? useGLTF("./desktop_pc_mini/scene.gltf") : useGLTF("./desktop_pc/scene.gltf");
 
   return (
     <mesh>
