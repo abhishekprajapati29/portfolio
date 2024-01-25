@@ -1,6 +1,9 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
+import { motion } from "framer-motion";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { slideIn } from "../../utils/motion";
+import { EarthCanvas } from "../canvas";
 
 import CanvasLoader from "../Loader";
 
@@ -9,7 +12,7 @@ interface IsMobile {
 }
 
 const Computers = ({ isMobile }: IsMobile) => {
-  const computer = isMobile ? useGLTF("./pc_mini/scene.gltf") : useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
     <mesh>
@@ -71,7 +74,13 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        {!isMobile && <Computers isMobile={isMobile} />}
+        { isMobile && <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+      >
+        <EarthCanvas />
+      </motion.div>}
       </Suspense>
 
       <Preload all />
