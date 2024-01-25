@@ -1,9 +1,6 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { motion } from "framer-motion";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import { slideIn } from "../../utils/motion";
-import { EarthCanvas } from "../canvas";
 
 import CanvasLoader from "../Loader";
 
@@ -68,20 +65,14 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={<CanvasLoader />}>
+      {!isMobile && <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        {!isMobile && <Computers isMobile={isMobile} />}
-        { isMobile && <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-        <EarthCanvas />
-      </motion.div>}
-      </Suspense>
+        <Computers isMobile={isMobile} />
+      </Suspense>}
 
       <Preload all />
     </Canvas>
